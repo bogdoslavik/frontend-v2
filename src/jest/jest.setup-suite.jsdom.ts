@@ -14,10 +14,16 @@ import BalChip from '@/components/_global/BalChip/BalChip.vue';
 import BalLoadingBlock from '@/components/_global/BalLoadingBlock/BalLoadingBlock.vue';
 import BalTable from '@/components/_global/BalTable/BalTable.vue';
 import BalTooltip from '@/components/_global/BalTooltip/BalTooltip.vue';
+import BalModal from '@/components/_global/BalModal/BalModal.vue';
 import CompositionIcon from '@/components/_global/icons/CompositionIcon.vue';
 import NetworkIcon from '@/components/_global/icons/NetworkIcon.vue';
 import StarsIcon from '@/components/_global/icons/StarsIcon.vue';
+import BalCircle from '@/components/_global/shapes/BalCircle/BalCircle.vue';
 import translations from '@/locales/default.json';
+// import BalHorizSteps from '@/components/_global/BalHorizSteps/BalHorizSteps.vue';
+import BalStack from '@/components/_global/BalStack/BalStack.vue';
+import SpinnerIcon from '@/components/_global/icons/SpinnerIcon.vue';
+// import BalActionSteps from '@/components/_global/BalActionSteps/BalActionSteps.vue';
 
 const i18n = createI18n({
   locale: 'en-US',
@@ -49,10 +55,12 @@ jest.mock('@/composables/useEthers');
 jest.mock('@/composables/useTransactions');
 
 config.global.components = {
+  BalAlert,
+  BalModal,
+  BalCircle,
   BalBreakdown,
   BalBtn,
   BalCard,
-  BalAlert,
   BalChip,
   BalIcon,
   BalLoadingBlock,
@@ -61,4 +69,8 @@ config.global.components = {
   CompositionIcon,
   NetworkIcon,
   StarsIcon,
+  // BalHorizSteps,
+  // BalActionSteps,
+  BalStack,
+  SpinnerIcon,
 };

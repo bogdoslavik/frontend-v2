@@ -26,6 +26,7 @@ import {
   TransactionActionState,
 } from '@/types/transactions';
 import { captureException } from '@sentry/core';
+import BalHorizSteps from '@/components/_global/BalHorizSteps/BalHorizSteps.vue';
 
 /**
  * TYPES
